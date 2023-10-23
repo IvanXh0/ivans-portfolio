@@ -6,7 +6,7 @@ import SectionHeading from "./section-heading";
 import { skills } from "@/lib/data";
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills", 0.1);
+  const { ref } = useSectionInView("Skills", 0.4);
   return (
     <motion.section
       ref={ref}

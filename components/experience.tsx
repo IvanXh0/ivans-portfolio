@@ -8,7 +8,7 @@ import { experiences } from "@/lib/data";
 import TimelineItem from "./timeline-item";
 
 export default function Experience() {
-  const { ref } = useSectionInView("Experience", 0.8);
+  const { ref } = useSectionInView("Experience", 0.5);
   return (
     <motion.section
       ref={ref}

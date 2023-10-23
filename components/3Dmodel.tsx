@@ -46,7 +46,7 @@ const Model = () => {
         shadow-mapSize={1024}
       />
       <pointLight intensity={1} />
-      <primitive object={model.scene} scale={0.22} position={[0, 0, 0]} />
+      <primitive object={model.scene} scale={0.3} position={[0, 0, 0]} />
     </mesh>
   );
 };
@@ -56,7 +56,7 @@ export const ModelCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [0, 12, 0], fov: 18 }}
+      camera={{ position: [0, 12, 0], fov: 19 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>

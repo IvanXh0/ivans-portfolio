@@ -8,14 +8,19 @@ import useActiveStore from "@/store/active.store";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/inView";
 
 export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveStore();
+
+  const { ref } = useSectionInView("Home", 0.5);
   return (
     <motion.section
+      ref={ref}
+      id="home"
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
-      className="relative w-full h-screen mx-auto"
+      className="relative w-full h-[80vh] mx-auto mt-12 scroll-mt-[80rem]"
     >
       <div className="absolute inset-0 max-w-5xl  mx-auto flex flex-col md:flex-row items-center justify-between gap-x-5 md:items-start ">
         <div className="mb-10 mt-4 text-xl font-medium !leading-[1.5] sm:text-2xl text-slate-900 px-9 md:px-0">

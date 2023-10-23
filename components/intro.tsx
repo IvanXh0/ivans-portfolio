@@ -13,14 +13,14 @@ import { useSectionInView } from "@/lib/inView";
 export default function Intro() {
   const { setActiveSection, setTimeOfLastClick } = useActiveStore();
 
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Home", 0.8);
   return (
     <motion.section
       ref={ref}
       id="home"
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
-      className="relative w-full h-[80vh] mx-auto mt-12 scroll-mt-[80rem]"
+      className="relative w-full h-[60vh] mb-[12rem] md:mb-0 mx-auto mt-12 scroll-mt-[100rem]"
     >
       <div className="absolute inset-0 max-w-5xl  mx-auto flex flex-col md:flex-row items-center justify-between gap-x-5 md:items-start ">
         <div className="mb-10 mt-4 text-xl font-medium !leading-[1.5] sm:text-2xl text-slate-900 px-9 md:px-0">
@@ -90,7 +90,7 @@ export default function Intro() {
             </a>
           </motion.div>
         </div>
-        <div className="w-full h-1/2 flex">
+        <div className="w-full h-full flex items-center justify-center">
           <ModelCanvas />
         </div>
       </div>

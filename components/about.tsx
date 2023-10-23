@@ -29,7 +29,7 @@ export default function About() {
         <span className="font-medium">ability to solve complex problems.</span>{" "}
         My current working stack and skillset is:{" "}
         <span className="font-medium">
-          Javascript, Typescript, React, Next.js, Angular, Node.js, NestJS,
+          JavaScript, TypeScript, React, Next.js, Angular, Node.js, NestJS,
           Express.js, MongoDB and PostgreSQL.
         </span>{" "}
         I&apos;m also a full time <span className="font-medium">NeoVim </span>

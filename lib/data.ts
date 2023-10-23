@@ -52,3 +52,22 @@ export const projectData = [
     imageUrl: aibuddysuite,
   },
 ] as const;
+
+export const skills = [
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Angular",
+  "Node.js",
+  "NestJS",
+  "Go",
+  "TailwindCSS",
+  "Shadcn",
+  "Material UI",
+  "Bootstrap",
+  "Framer Motion",
+  "MongoDB",
+  "PostgreSQL",
+  "TypeORM",
+];

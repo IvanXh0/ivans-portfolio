@@ -5,14 +5,19 @@ import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/inView";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setLoading(true);
+
+    const loadingToast = toast.loading("Sending message...");
 
     const res = await fetch("/api/email", {
       method: "POST",
@@ -20,10 +25,13 @@ export default function Contact() {
     });
 
     if (res.ok) {
+      setLoading(false);
       setEmail("");
       setMessage("");
+      toast.success("Message sent! I'll get back to you as soon as possible.");
+      toast.dismiss(loadingToast);
     } else {
-      throw new Error("Failed to send email");
+      toast.error("Something went wrong, please try again!");
     }
   };
 
@@ -72,6 +80,7 @@ export default function Contact() {
         <button
           className="h-14 w-40 rounded-lg bg-black text-white hover:bg-opacity-90 transition-all"
           type="submit"
+          disabled={loading}
         >
           Send
         </button>

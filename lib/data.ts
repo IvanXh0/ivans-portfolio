@@ -71,3 +71,36 @@ export const skills = [
   "PostgreSQL",
   "TypeORM",
 ];
+
+export const experiences = [
+  {
+    role: "Software Developer",
+    company: "Pabau Clinic Software",
+    date: "Today",
+    years: "Less than a year",
+  },
+  {
+    role: "Assistant Lecturer",
+    company: "Seavus Education and Development Center",
+    date: "Today",
+    years: "Less than a year",
+  },
+  {
+    role: "Web Development Bootcamp",
+    company: "Seavus Education and Development Center",
+    date: "2023",
+    years: "1 year",
+  },
+  {
+    role: "Information Technology Specialist",
+    company: "Inbox - Archive and Data Center",
+    date: "2022",
+    years: "2 years",
+  },
+  {
+    role: "Team Lead (Digitization Sector)",
+    company: "Inbox - Archive and Data Center",
+    date: "2017",
+    years: "4.5 years",
+  },
+] as const;

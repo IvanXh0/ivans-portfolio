@@ -6,12 +6,12 @@ import SectionHeading from "./section-heading";
 import { skills } from "@/lib/data";
 
 export default function Skills() {
-  const { ref } = useSectionInView("Skills");
+  const { ref } = useSectionInView("Skills", 0.1);
   return (
     <motion.section
       ref={ref}
       id="skills"
-      className="mt-20 mb-28 max-w-[53rem] text-center sm:mb-40"
+      className="mt-20 mb-28 max-w-[53rem] text-center sm:mb-40 scroll-mt-28"
     >
       <SectionHeading>My Skills</SectionHeading>
       <ul className="flex flex-row gap-2 flex-wrap font-medium text-zinc-800">

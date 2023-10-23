@@ -16,6 +16,7 @@ export default function Projects() {
       className="mt-20 mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
       transition={{ delay: 0.175 }}
     >
       <SectionHeading>My Projects</SectionHeading>

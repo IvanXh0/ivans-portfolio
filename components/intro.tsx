@@ -22,8 +22,8 @@ export default function Intro() {
       animate={{ opacity: 1, y: 0 }}
       className="relative w-full h-[60vh] mb-[12rem] md:mb-0 mx-auto mt-12 scroll-mt-[100rem]"
     >
-      <div className="absolute inset-0 max-w-5xl  mx-auto flex flex-col md:flex-row items-center justify-between gap-x-5 md:items-start ">
-        <div className="mb-10 mt-4 text-xl font-medium !leading-[1.5] sm:text-2xl text-slate-900 px-9 md:px-0">
+      <div className="absolute inset-0 max-w-7xl  mx-auto flex flex-col md:flex-row items-center justify-between gap-x-5 md:items-start ">
+        <div className="mb-10 mt-4 text-xl font-medium !leading-[1.5] sm:text-xl text-slate-900 px-9 md:px-0 flex-1">
           <div className="p-5 flex items-center justify-center">
             <div className="hover:scale-105 transition">
               <Image
@@ -42,8 +42,10 @@ export default function Intro() {
             <span className="font-bold">Hello, I&apos;m Ivan.</span> I&apos;m a{" "}
             <span className="font-bold">full-stack developer.</span> I enjoy
             building <span className="italic">sites & apps</span>. Currently
-            working as a software developer at{" "}
-            <span className="underline">Pabau Clinic Software</span>.
+            working as a <span className="font-bold">Software Developer</span>{" "}
+            at Pabau Clinic Software and
+            <span className="font-bold"> Assistant Lecturer</span> at Seavus
+            Education and Development Center .
           </motion.h1>
           <motion.div
             className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 mt-5 md:mt-2 text-sm font-medium"
@@ -91,7 +93,7 @@ export default function Intro() {
             </a>
           </motion.div>
         </div>
-        <div className="w-full h-full flex items-center justify-center">
+        <div className="w-full h-full flex items-center justify-center flex-1">
           <ModelCanvas />
         </div>
       </div>

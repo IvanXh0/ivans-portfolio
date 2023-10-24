@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/inView";
 import { useState } from "react";
 import toast from "react-hot-toast";
+import axios from "axios";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -19,19 +20,20 @@ export default function Contact() {
 
     const loadingToast = toast.loading("Sending message...");
 
-    const res = await fetch("/api/email", {
-      method: "POST",
-      body: JSON.stringify({ email, message }),
-    });
-
-    if (res.ok) {
+    try {
+      await axios.post("/api/email", {
+        email,
+        message,
+      });
       setLoading(false);
       setEmail("");
       setMessage("");
       toast.success("Message sent! I'll get back to you as soon as possible.");
       toast.dismiss(loadingToast);
-    } else {
-      toast.error("Something went wrong, please try again!");
+    } catch (error: any) {
+      toast.error(error.response.data);
+      toast.dismiss(loadingToast);
+      setLoading(false);
     }
   };
 
@@ -65,7 +67,6 @@ export default function Contact() {
 
       <form className="mt-10 flex flex-col" onSubmit={handleSubmit}>
         <input
-          type="email"
           className="h-14 px-4 rounded-lg borderBlack"
           placeholder="Your email..."
           onChange={(e) => setEmail(e.target.value)}

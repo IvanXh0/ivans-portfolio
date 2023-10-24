@@ -62,10 +62,11 @@ export const ModelCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={true}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
+          // maxPolarAngle={Math.PI / 2}
+          // minPolarAngle={Math.PI / 2}
+          //
           autoRotate={true}
-          autoRotateSpeed={2}
+          autoRotateSpeed={3}
         />
         <Model />
       </Suspense>

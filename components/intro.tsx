@@ -20,7 +20,7 @@ export default function Intro() {
       id="home"
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
-      className="relative w-full h-[60vh] mb-[12rem] md:mb-0 mx-auto mt-12 scroll-mt-[100rem]"
+      className="relative w-full h-[60vh] mb-[6rem] md:mb-0 mx-auto mt-12 scroll-mt-[100rem]"
     >
       <div className="absolute inset-0 max-w-7xl  mx-auto flex flex-col md:flex-row items-center justify-between gap-x-5 md:items-start ">
         <div className="mb-10 mt-4 text-xl font-medium !leading-[1.5] sm:text-xl text-slate-900 px-9 md:px-0 flex-1">
@@ -93,7 +93,7 @@ export default function Intro() {
             </a>
           </motion.div>
         </div>
-        <div className="w-full h-full flex items-center justify-center flex-1">
+        <div className="w-full h-full hidden md:flex items-center justify-center flex-1">
           <ModelCanvas />
         </div>
       </div>

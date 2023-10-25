@@ -45,7 +45,7 @@ export default function Intro() {
             working as a <span className="font-bold">Software Developer</span>{" "}
             at Pabau Clinic Software and
             <span className="font-bold"> Assistant Lecturer</span> at Seavus
-            Education and Development Center .
+            Education and Development Center.
           </motion.h1>
           <motion.div
             className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 mt-5 md:mt-2 text-sm font-medium"

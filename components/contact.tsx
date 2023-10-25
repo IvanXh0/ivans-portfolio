@@ -78,13 +78,19 @@ export default function Contact() {
           onChange={(e) => setMessage(e.target.value)}
           value={message}
         />
-        <button
+        <motion.button
           className="h-14 w-40 rounded-lg bg-black text-white hover:bg-opacity-90 transition-all"
           type="submit"
           disabled={loading}
+          whileHover={{
+            scale: 1.1,
+          }}
+          whileTap={{
+            scale: 0.9,
+          }}
         >
           Send
-        </button>
+        </motion.button>
       </form>
     </motion.section>
   );

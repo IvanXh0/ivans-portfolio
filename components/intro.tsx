@@ -39,13 +39,20 @@ export default function Intro() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <span className="font-bold">Hello, I&apos;m Ivan.</span> I&apos;m a{" "}
-            <span className="font-bold">full-stack developer.</span> I enjoy
-            building <span className="italic">sites & apps</span>. Currently
-            working as a <span className="font-bold">Software Developer</span>{" "}
-            at Pabau Clinic Software and
-            <span className="font-bold"> Assistant Lecturer</span> at Seavus
-            Education and Development Center.
+            <span className="font-bold">Hey there, I&apos;m Ivan,</span> your
+            friendly neighborhood{" "}
+            <span className="font-bold">full-stack developer.</span> I get a
+            kick out of building cool websites and apps. By day, I&apos;m a{" "}
+            <span className="font-bold">
+              Software Developer at Pabau Clinic Software
+            </span>
+            , cooking up code magic. When the sun sets, you&apos;ll find me
+            sharing my tech wisdom as an{" "}
+            <span className="font-bold">
+              Assistant Lecturer at Seavus Education and Development Center
+            </span>
+            . Welcome to my corner of the web. Let&apos;s dive into my digital
+            playground!
           </motion.h1>
           <motion.div
             className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 mt-5 md:mt-2 text-sm font-medium"

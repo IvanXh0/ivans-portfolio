@@ -2,7 +2,7 @@ import { currentYear } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer className="mt-28 mb-10 text-center flex flex-col">
+    <footer className="mt-28 mb-10 text-center flex flex-col px-3 leading-4">
       <small className="text-sm font-medium text-gray-500">
         Created with &#128156; by Ivan Apostolovski. &copy; {currentYear}
       </small>

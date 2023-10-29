@@ -28,10 +28,10 @@ export default function About() {
         to express myself the way I wanted to. My favorite part of programming
         is the{" "}
         <span className="font-medium">ability to solve complex problems.</span>{" "}
-        My current working stack and skillset is:{" "}
+        My current working stack is:{" "}
         <span className="font-medium">
-          JavaScript, TypeScript, React, Next.js, Angular, Node.js, NestJS,
-          Express.js, MongoDB and PostgreSQL.
+          TypeScript, React, Next.js, NestJS, PostgreSQL, GraphQL, Apollo and
+          Ant Design.
         </span>{" "}
         I&apos;m also a full time <span className="font-medium">NeoVim </span>
         enthusiast. In my free time, I&apos;m either playing sports or coding

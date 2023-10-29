@@ -2,6 +2,8 @@ import codesnippet from "@/public/codesnippet.png";
 import ivanszoo from "@/public/ivanszoo.png";
 import aibuddysuite from "@/public/aibuddysuite.png";
 
+export const currentYear = new Date().getFullYear();
+
 export const links = [
   {
     name: "Home",
@@ -70,6 +72,9 @@ export const skills = [
   "MongoDB",
   "PostgreSQL",
   "TypeORM",
+  "GraphQL",
+  "Apollo",
+  "Ant Design",
 ];
 
 export const experiences = [

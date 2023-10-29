@@ -11,7 +11,7 @@ export default function About() {
     <motion.section
       id="about"
       ref={ref}
-      className="mt-20 mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      className="mt-[5rem] mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 sm:mt-[8.5rem]"
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

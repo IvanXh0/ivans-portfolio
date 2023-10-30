@@ -8,7 +8,27 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ivan Apostolovski | Portfolio",
-  description: "Portfolio of Ivan Apostolovski",
+  description: "Personal portfolio of Ivan Apostolovski",
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicon-32x32.png",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      url: "/favicon-16x16.png",
+    },
+    {
+      rel: "apple-touch-icon",
+      type: "image/png",
+      sizes: "180x180",
+      url: "/apple-touch-icon.png",
+    },
+  ],
 };
 
 export default function RootLayout({

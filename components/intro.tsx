@@ -47,9 +47,9 @@ export default function Intro() {
               Software Developer at Pabau Clinic Software
             </span>
             , cooking up code magic. When the sun sets, you&apos;ll find me
-            sharing my tech wisdom as an{" "}
+            sharing my tech wisdom as a{" "}
             <span className="font-bold">
-              Assistant Lecturer at Seavus Education and Development Center
+              Technical Co-Trainer at Qinshift Academy 
             </span>
             . Welcome to my corner of the web. Let&apos;s dive into my digital
             playground!

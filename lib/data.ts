@@ -1,8 +1,7 @@
 import codesnippet from "@/public/codesnippet.png";
 import ivanszoo from "@/public/ivanszoo.png";
 import aibuddysuite from "@/public/aibuddysuite.png";
-
-export const currentYear = new Date().getFullYear();
+import { formatDuration } from "./formatDuration";
 
 export const links = [
   {
@@ -82,13 +81,19 @@ export const experiences = [
     role: "Software Developer",
     company: "Pabau Clinic Software",
     date: "Today",
-    years: "Less than a year",
+    years: formatDuration('2023-10-01')
+  },
+  {
+    role: "Technical Co-Trainer",
+    company: "Qinshift Academy",
+    date: "Today",
+    years: formatDuration('2024-10-24')
   },
   {
     role: "Assistant Lecturer",
     company: "Seavus Education and Development Center",
-    date: "Today",
-    years: "Less than a year",
+    date: "2023-2024",
+    years: "1 year",
   },
   {
     role: "Web Development Bootcamp",

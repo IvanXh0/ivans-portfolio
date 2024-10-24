@@ -3,6 +3,8 @@ import ivanszoo from "@/public/ivanszoo.png";
 import aibuddysuite from "@/public/aibuddysuite.png";
 import { formatDuration } from "./formatDuration";
 
+export const currentYear = new Date().getFullYear();
+
 export const links = [
   {
     name: "Home",
@@ -81,13 +83,13 @@ export const experiences = [
     role: "Software Developer",
     company: "Pabau Clinic Software",
     date: "Today",
-    years: formatDuration('2023-10-01')
+    years: formatDuration("2023-10-01"),
   },
   {
     role: "Technical Co-Trainer",
     company: "Qinshift Academy",
     date: "Today",
-    years: formatDuration('2024-10-24')
+    years: formatDuration("2024-10-24"),
   },
   {
     role: "Assistant Lecturer",

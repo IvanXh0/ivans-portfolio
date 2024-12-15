@@ -80,16 +80,22 @@ export const skills = [
 
 export const experiences = [
   {
-    role: "Software Developer",
+    role: "Tech Team Lead",
     company: "Pabau Clinic Software",
     date: "Today",
-    years: formatDuration("2023-10-01"),
+    years: formatDuration("2024-11-01"),
   },
   {
     role: "Technical Co-Trainer",
     company: "Qinshift Academy",
     date: "Today",
     years: formatDuration("2024-10-24"),
+  },
+  {
+    role: "Software Developer",
+    company: "Pabau Clinic Software",
+    date: "2024",
+    years: formatDuration("2023-10-01"),
   },
   {
     role: "Assistant Lecturer",

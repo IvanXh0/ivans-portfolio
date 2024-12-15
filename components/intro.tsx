@@ -44,12 +44,12 @@ export default function Intro() {
             <span className="font-bold">full-stack developer.</span> I get a
             kick out of building cool websites and apps. By day, I&apos;m a{" "}
             <span className="font-bold">
-              Software Developer at Pabau Clinic Software
+              Tech Team Lead at Pabau Clinic Software
             </span>
             , cooking up code magic. When the sun sets, you&apos;ll find me
             sharing my tech wisdom as a{" "}
             <span className="font-bold">
-              Technical Co-Trainer at Qinshift Academy 
+              Technical Co-Trainer at Qinshift Academy
             </span>
             . Welcome to my corner of the web. Let&apos;s dive into my digital
             playground!
